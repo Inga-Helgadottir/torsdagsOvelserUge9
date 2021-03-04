@@ -29,41 +29,10 @@ public class Main {
 
         while(scan.hasNextLine()){
             text[i] = scan.nextLine().split(" ");
-            //System.out.println(text[i].length);
             i++;
         }
 
-//        printWordsStartingWith("Ø");
-//        printWordsOfLength(3);
         printWordsWithDoubleConsonant(text);
-    }
-
-    private static void printWordsOfLength(int l) {
-        boolean wordisvalid = true;
-        for(int i = 0; i < text.length; i++){
-            for (String s : text[i]) {
-                if(s.length() == l){
-                    if(s.contains(",") || s.contains(".")) {
-                        wordisvalid = false;
-                    }
-                    if(wordisvalid){
-                        System.out.println(s);
-                    }
-
-
-                }
-            }
-        }
-    }
-
-    private static void printWordsStartingWith(String pattern) {
-        for(int i = 0; i < text.length; i++){
-            for (String s : text[i]) {
-                if(s.startsWith(pattern) || s.startsWith(pattern.toLowerCase())){
-                    System.out.println(s);
-                }
-            }
-        }
     }
 
     private static void printWordsWithDoubleConsonant(String[][] text){
