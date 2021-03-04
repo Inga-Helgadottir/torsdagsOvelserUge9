@@ -29,10 +29,10 @@ public class Main {
     public static void printPartOfWord(String word, int start, int end, int functionCall){
         String subString = "";
         try{
-            subString = word.substring(start, start+end);
+            subString = word.substring(start, start + end);
         }catch(StringIndexOutOfBoundsException e){
             if(start > word.length() || start < 0){
-                System.out.println("IndexOutOfBounds in function call " + functionCall);
+                System.out.println("IndexOutOfBounds in function call " + functionCall);//so i can see which function call it has an issue with
             }else if(start + end > word.length()){
                 subString = word.substring(start);
             }
