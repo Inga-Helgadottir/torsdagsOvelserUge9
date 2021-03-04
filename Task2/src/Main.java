@@ -27,7 +27,7 @@ public class Main {
                 }
             }
         }
-            System.out.println(placeholder);
+        System.out.println(placeholder);
     }
 
 }
